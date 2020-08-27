@@ -1,5 +1,94 @@
-img {
-	width: 20%;
-	float: left;
-	margin: 1.66%;
+/* Global Layout Set-up */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+#welcome-section {
+	padding-top: 0;
+	display: block;
+	height: 100vh;
+}
+
+#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
+	max-height: 1400px;
+	justify-content: space-around;
+}
+
+a img {
+	width: 80%;
+	padding: 20px;
+}
+
+/* a {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	color: #f1b60b;
+} */
+
+/* Section Styles */
+
+.main-nav {
+	width: 100%;
+	background: black;
+	min-height: 30px;
+	padding: 10px;
+	position: fixed;
+	text-align: center;
+}
+.nav {
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.nav .name {
+	display: block;
+	margin-right: auto;
+	color: white;
+}
+.nav li {
+	padding: 5px 10px 10px 10px;
+}
+.nav a {
+	transition: all .5s;
+}
+.nav a:hover {
+	color: #f1b60b;
+}
+
+header {
+	text-align: center;
+	background: url('images/background-1.jpg') no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 60px;
+}
+header {
+	line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+	img {
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	img {
+		width: 25%;
+	}
 }

@@ -1,1 +1,1 @@
-# pattern-portfolio
+freeCodeCamp project: Personal Portfolio. When I'm not coding and designing websites, I enjoy creating patterns and then selling those patterns on items at Redbubble. This website showcases some of my favorite patterns that I've designed all linked to their respective item on Redbubble. I designed and coded this responsive, mobile-first website using HTML and CSS. Media queries were used to adjust for small, medium, and large screen sizes. This has a fixed header as well as a hero image that is always 100% the height of the viewport height.

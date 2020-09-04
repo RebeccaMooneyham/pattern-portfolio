@@ -2,8 +2,14 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	font-family: 'Roboto', sans-serif;
+	background: #f5f5f5;
+}
+
+p {
+	line-height: 1.5;
 }
 
 /* --  Nav Styles -- */
@@ -15,9 +21,11 @@ body {
 	position: fixed;
 	text-align: center;
 }
+
 .container {
 	margin: 0 auto;
 }
+
 .nav {
 	display: flex;
 	flex-direction: column;
@@ -26,17 +34,21 @@ body {
 	margin: 0 auto;
 	padding: 0 5px;
 }
+
 .nav .name {
 	display: block;
 	color: #fff;
 	padding-bottom: 5px;
 }
+
 .nav li {
 	padding-top: 3px;
 }
+
 .nav a {
 	transition: all .5s;
 }
+
 .nav a:hover {
 	color: #c8c1fd;
 }
@@ -45,6 +57,7 @@ a {
 	text-decoration: none;
 	color: #999;
 }
+
 a:hover {
 	color: #c8c1fd;
 }
@@ -65,20 +78,28 @@ h1 {
 	font-size: 2rem;
 }
 
-/* -- Projects Section -- */
+/* -- Project Intro -- */
+.project-intro {
+	width: 80%;
+	margin: auto;
+}
+
+/* -- Portfolio Section -- */
 #projects {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	width: 90%;
 	margin: auto;
-	max-height: 1400px;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 a img {
-	width: 80%;
 	padding: 20px;
+	width: 320px;
+}
+
+img {
+	width: 320px;
 }
 
 header {
@@ -88,11 +109,27 @@ header {
 	overflow: hidden;
 	padding-top: 60px;
 }
+
 header {
 	line-height: 1.5;
 }
+
 h1 {
 	margin-top: 60px;
+}
+
+/* -- GitHub Section -- */
+#github {
+	background: #000;
+	padding-top: 15px;
+	height: 100px;
+	margin: auto;
+}
+
+#github p {
+	width: 80%;
+	color: #fff;
+	margin: auto;
 }
 
 /* -- Media Queries -- */
@@ -100,9 +137,11 @@ h1 {
 	.container {
 		width: 80%;
 	}
+
 	#navbar {
 		height: 60px;
 	}
+
 	.nav {
 		flex-direction: row;
 		justify-content: space-around;
@@ -115,6 +154,7 @@ h1 {
 	nav .name {
 		margin-right: auto;
 	}
+
 	.nav li {
 		padding: 5px 10px 10px 10px;
 	}
@@ -123,13 +163,30 @@ h1 {
 		font-size: 3.5rem;
 	}
 
-	img {
-		width: 40%;
+	#projects {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 90%;
+		margin: auto;
+		justify-content: space-around;
+	}
+
+	#github {
+		padding-top: 25px;
 	}
 }
 
 @media only screen and (min-width: 1024px) {
 	img {
 		width: 25%;
+	}
+
+	#github {
+		padding-top: 30px;
+	}
+
+	#github p {
+		width: 50%;
 	}
 }
